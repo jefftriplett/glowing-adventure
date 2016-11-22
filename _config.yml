@@ -36,6 +36,8 @@ github_username:  djangocon
 
 permalinks: pretty
 
+timezone: America/New_York
+
 # Build settings
 markdown: kramdown
 
