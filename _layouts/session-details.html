@@ -11,7 +11,11 @@ layout: page
 
     <ul class="meta">
       <li>Difficulty: {{ page.difficulty }}</li>
-      <li>Track: {{ page.track }}</li>
+
+      {% if page.track != null %}
+        <li>Track: {{ page.track }}</li>
+      {% endif %}
+
       {% if page.slides != null %}
         <li><a href="{{ page.slides }}">View slides</a></li>
       {% endif %}
