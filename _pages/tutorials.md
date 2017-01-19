@@ -5,7 +5,6 @@ permalink: /tutorials/
 ---
 
 <div class="schedule">
-    <h1 class="title">{{ page.title }}</h1>
 
     <p>You are viewing the demo for a <a href="http://github.com/fourkitchens/jekyll-schedule">Jekyll-powered event schedule</a>.</p>
     <p><a href="http://fourkitchens.com/blog/2013/07/10/jekyll-event-schedule">Read more about how it was built</a> or <a href="http://2013.drupalcampaustin.org/schedule/">see a finished, branded version</a>.</p>
