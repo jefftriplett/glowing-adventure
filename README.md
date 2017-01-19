@@ -6,6 +6,5 @@
 $ gem install jekyll bundler
 $ bundle install
 $ bundle exec jekyll serve
-$ # => Now browse to http://localhost:4000
-
+# => Now browse to http://localhost:4000
 ```
