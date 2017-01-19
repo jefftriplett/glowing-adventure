@@ -22,7 +22,7 @@ permalink: /talks/
         {% for post in site.categories.talk reversed %}
             {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
             {% if day == 'Monday' %}
-                {% include schedule-day.html %}
+                {% include talks-schedule-day.html %}
             {% endif %}
         {% endfor %}
     </section>
@@ -39,7 +39,7 @@ permalink: /talks/
         {% for post in site.categories.talk reversed %}
             {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
             {% if day == 'Tuesday' %}
-                {% include schedule-day.html %}
+                {% include talks-schedule-day.html %}
             {% endif %}
         {% endfor %}
     </section>
@@ -56,7 +56,7 @@ permalink: /talks/
         {% for post in site.categories.talk reversed %}
             {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
             {% if day == 'Wednesday' %}
-                {% include schedule-day.html %}
+                {% include talks-schedule-day.html %}
             {% endif %}
         {% endfor %}
     </section>

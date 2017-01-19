@@ -22,7 +22,7 @@ permalink: /tutorials/
         {% for post in site.categories.tutorial reversed %}
             {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
             {% if day == 'Sunday' %}
-                {% include schedule-day.html %}
+                {% include tutorials-schedule-day.html %}
             {% endif %}
         {% endfor %}
     </section>
