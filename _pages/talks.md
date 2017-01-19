@@ -4,6 +4,7 @@ title: Talks
 permalink: /talks/
 ---
 
+<!-- .schedule -->
 <div class="schedule">
     <h1 class="title">{{ page.title }}</h1>
 
@@ -16,12 +17,45 @@ permalink: /talks/
             <h2>Monday</h2>
             <span data-room="room-1">Room 1</span>
             <span data-room="room-2">Room 2</span>
-            <span data-room="room-3">Room 3</span>
         </header>
 
         {% for post in site.categories.talk reversed %}
             {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
             {% if day == 'Monday' %}
+                {% include schedule-day.html %}
+            {% endif %}
+        {% endfor %}
+    </section>
+
+    <hr>
+
+    <section id="tuesday" class="day">
+        <header>
+            <h2>Tuesday</h2>
+            <span data-room="room-1">Room 1</span>
+            <span data-room="room-2">Room 2</span>
+        </header>
+
+        {% for post in site.categories.talk reversed %}
+            {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+            {% if day == 'Tuesday' %}
+                {% include schedule-day.html %}
+            {% endif %}
+        {% endfor %}
+    </section>
+
+    <hr>
+
+    <section id="wednesday" class="day">
+        <header>
+            <h2>Wednesday</h2>
+            <span data-room="room-1">Room 1</span>
+            <span data-room="room-2">Room 2</span>
+        </header>
+
+        {% for post in site.categories.talk reversed %}
+            {% capture day %}{{ post.date | date: "%A" }}{% endcapture %}
+            {% if day == 'Wednesday' %}
                 {% include schedule-day.html %}
             {% endif %}
         {% endfor %}
